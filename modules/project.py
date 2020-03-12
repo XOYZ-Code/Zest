@@ -2,6 +2,11 @@ from modules.version_control import Project
 from modules.system import File, System
 from modules.style import Style
 from modules.algorythms import Algotythms
+from .neural_network import NeuralNetwork, NeuralLayer, NeuralLayerStacks
+from numpy import exp, array, random, dot
+from numpy.core.tests.test_mem_overlap import xrange
+import numpy
+from tqdm import tqdm
 
 
 # Initialize Project Objects

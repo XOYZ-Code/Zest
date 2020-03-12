@@ -32,6 +32,11 @@ class File:
         open(parameter_file, 'w').writelines(parameter_content)
         self.file_total_written += 1
 
+    def save_raw(self, parameter_file, parameter_content):
+        os.makedirs(os.path.dirname(parameter_file), exist_ok=True)
+        open(parameter_file, 'w').write(parameter_content)
+        self.file_total_written += 1
+
     def save_json(self, parameter_file, parameter_content):
         os.makedirs(os.path.dirname(parameter_file), exist_ok=True)
         open(parameter_file, 'w').write(json.dumps(parameter_content))
