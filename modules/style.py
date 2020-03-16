@@ -10,6 +10,17 @@ class Style:
         self.style_char = parameter_char
         self.style_end = parameter_end
 
+    def fit_number(self, number, length=5):
+        if isinstance(number, str):
+            cache = number
+        else:
+            cache = str(number)
+        self.style_return = ''
+        for i in range(length - len(cache)):
+            self.style_return += '0'
+        self.style_return += cache
+        return self.style_return
+
     def paint(self, parameter_text='', parameter_subject='Console', parameter_request_input=False):
         self.style_return = parameter_subject
 

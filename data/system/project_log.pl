@@ -501,3 +501,67 @@ Thu Mar 12 03:17:15 2020: Loading project Information
 Thu Mar 12 03:17:15 2020: Increasing build number to 48
 Thu Mar 12 03:17:15 2020: Finished Loading of >image_upscaler< from >XOYZ-Code [xoyz.productions@gmail.com]< at version >0.2 Build 48<
 Thu Mar 12 03:17:15 2020: Sucessfully initialized all needed Project objects
+Thu Mar 12 03:22:05 2020: Loading project Information
+Thu Mar 12 03:22:05 2020: Increasing build number to 49
+Thu Mar 12 03:22:05 2020: Finished Loading of >image_upscaler< from >XOYZ-Code [xoyz.productions@gmail.com]< at version >0.2 Build 49<
+Thu Mar 12 03:22:05 2020: Sucessfully initialized all needed Project objects
+Thu Mar 12 03:30:56 2020: Loading project Information
+Thu Mar 12 03:30:56 2020: Increasing build number to 50
+Thu Mar 12 03:30:56 2020: Finished Loading of >image_upscaler< from >XOYZ-Code [xoyz.productions@gmail.com]< at version >0.2 Build 50<
+Thu Mar 12 03:30:56 2020: Sucessfully initialized all needed Project objects
+Thu Mar 12 03:35:33 2020: Loading project Information
+Thu Mar 12 03:35:33 2020: Increasing build number to 51
+Thu Mar 12 03:35:33 2020: Finished Loading of >image_upscaler< from >XOYZ-Code [xoyz.productions@gmail.com]< at version >0.2 Build 51<
+Thu Mar 12 03:35:33 2020: Sucessfully initialized all needed Project objects
+Thu Mar 12 10:07:03 2020: Loading project Information
+Thu Mar 12 10:07:03 2020: Increasing build number to 52
+Thu Mar 12 10:07:03 2020: Finished Loading of >image_upscaler< from >XOYZ-Code [xoyz.productions@gmail.com]< at version >0.2 Build 52<
+Thu Mar 12 10:07:03 2020: Sucessfully initialized all needed Project objects
+Thu Mar 12 10:08:25 2020: Loading project Information
+Thu Mar 12 10:08:25 2020: Increasing build number to 53
+Thu Mar 12 10:08:25 2020: Finished Loading of >image_upscaler< from >XOYZ-Code [xoyz.productions@gmail.com]< at version >0.2 Build 53<
+Thu Mar 12 10:08:25 2020: Sucessfully initialized all needed Project objects
+Thu Mar 12 10:10:11 2020: Loading project Information
+Thu Mar 12 10:10:11 2020: Increasing build number to 54
+Thu Mar 12 10:10:11 2020: Finished Loading of >image_upscaler< from >XOYZ-Code [xoyz.productions@gmail.com]< at version >0.2 Build 54<
+Thu Mar 12 10:10:11 2020: Sucessfully initialized all needed Project objects
+Thu Mar 12 10:18:58 2020: Loading project Information
+Thu Mar 12 10:18:58 2020: Increasing build number to 55
+Thu Mar 12 10:18:58 2020: Finished Loading of >image_upscaler< from >XOYZ-Code [xoyz.productions@gmail.com]< at version >0.2 Build 55<
+Thu Mar 12 10:18:58 2020: Sucessfully initialized all needed Project objects
+Thu Mar 12 10:19:26 2020: Loading project Information
+Thu Mar 12 10:19:26 2020: Increasing build number to 56
+Thu Mar 12 10:19:26 2020: Finished Loading of >image_upscaler< from >XOYZ-Code [xoyz.productions@gmail.com]< at version >0.2 Build 56<
+Thu Mar 12 10:19:26 2020: Sucessfully initialized all needed Project objects
+Thu Mar 12 10:19:50 2020: Loading project Information
+Thu Mar 12 10:19:50 2020: Increasing build number to 57
+Thu Mar 12 10:19:50 2020: Finished Loading of >image_upscaler< from >XOYZ-Code [xoyz.productions@gmail.com]< at version >0.2 Build 57<
+Thu Mar 12 10:19:50 2020: Sucessfully initialized all needed Project objects
+Thu Mar 12 10:20:00 2020: Loading project Information
+Thu Mar 12 10:20:00 2020: Increasing build number to 58
+Thu Mar 12 10:20:00 2020: Finished Loading of >image_upscaler< from >XOYZ-Code [xoyz.productions@gmail.com]< at version >0.2 Build 58<
+Thu Mar 12 10:20:00 2020: Sucessfully initialized all needed Project objects
+Thu Mar 12 10:36:03 2020: Loading project Information
+Thu Mar 12 10:36:03 2020: Increasing build number to 59
+Thu Mar 12 10:36:03 2020: Finished Loading of >image_upscaler< from >XOYZ-Code [xoyz.productions@gmail.com]< at version >0.2 Build 59<
+Thu Mar 12 10:36:03 2020: Sucessfully initialized all needed Project objects
+Thu Mar 12 10:37:03 2020: Loading project Information
+Thu Mar 12 10:37:03 2020: Increasing build number to 60
+Thu Mar 12 10:37:03 2020: Finished Loading of >image_upscaler< from >XOYZ-Code [xoyz.productions@gmail.com]< at version >0.2 Build 60<
+Thu Mar 12 10:37:03 2020: Sucessfully initialized all needed Project objects
+Thu Mar 12 10:48:01 2020: Loading project Information
+Thu Mar 12 10:48:01 2020: Increasing build number to 61
+Thu Mar 12 10:48:01 2020: Finished Loading of >image_upscaler< from >XOYZ-Code [xoyz.productions@gmail.com]< at version >0.2 Build 61<
+Thu Mar 12 10:48:01 2020: Sucessfully initialized all needed Project objects
+Thu Mar 12 12:33:46 2020: Loading project Information
+Thu Mar 12 12:33:46 2020: Increasing build number to 62
+Thu Mar 12 12:33:46 2020: Finished Loading of >image_upscaler< from >XOYZ-Code [xoyz.productions@gmail.com]< at version >0.2 Build 62<
+Thu Mar 12 12:33:46 2020: Sucessfully initialized all needed Project objects
+Thu Mar 12 12:34:00 2020: Loading project Information
+Thu Mar 12 12:34:00 2020: Increasing build number to 63
+Thu Mar 12 12:34:00 2020: Finished Loading of >image_upscaler< from >XOYZ-Code [xoyz.productions@gmail.com]< at version >0.2 Build 63<
+Thu Mar 12 12:34:00 2020: Sucessfully initialized all needed Project objects
+Thu Mar 12 12:34:18 2020: Loading project Information
+Thu Mar 12 12:34:18 2020: Increasing build number to 64
+Thu Mar 12 12:34:18 2020: Finished Loading of >image_upscaler< from >XOYZ-Code [xoyz.productions@gmail.com]< at version >0.2 Build 64<
+Thu Mar 12 12:34:18 2020: Sucessfully initialized all needed Project objects

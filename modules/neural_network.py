@@ -9,6 +9,7 @@ from tqdm import tqdm
 from PIL import Image
 import os
 from .system import File
+from .style import Style
 
 
 class NeuralLayer:
@@ -32,6 +33,7 @@ class NeuralLayerStacks:
 class NeuralNetwork:
     square_size = 16
     NeuralFile = File()
+    NeuralStyle = Style()
 
     def __init__(self, layers, project_obj):
         self.project_obj = project_obj
@@ -82,7 +84,7 @@ class NeuralNetwork:
                                      '/training_data_' + self.project_obj.project_version_str.replace(' ', '-') +
                                      '_input' +
                                      '/training_data_' + self.project_obj.project_version_str.replace(' ', '-') +
-                                     '_frame_' + str(frame) + '.nntd', str(training_set_outputs))
+                                     '_frame_' + self.NeuralStyle.fit_number(frame, 10) + '.nntd', str(cache_list_inputs))
 
                 for square_w in range(im_w * 2, im_w * 2 + self.square_size * 2):
                     for square_h in range(im_h * 2, im_h * 2 + self.square_size * 2):
@@ -93,7 +95,7 @@ class NeuralNetwork:
                                      '/training_data_' + self.project_obj.project_version_str.replace(' ', '-') +
                                      '_output' +
                                      '/training_data_' + self.project_obj.project_version_str.replace(' ', '-') +
-                                     '_frame_' + str(frame) + '.nntd', str(training_set_outputs))
+                                     '_frame_' + self.NeuralStyle.fit_number(frame, 10) + '.nntd', str(cache_list_outputs))
                 # print(len(training_set_inputs))
                 # print((im_smaller.size[0] - 16) * (im_smaller.size[1] - 16))
             analyze_progress.update((im_smaller.size[1] - self.square_size))
