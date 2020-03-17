@@ -565,3 +565,7 @@ Thu Mar 12 12:34:18 2020: Loading project Information
 Thu Mar 12 12:34:18 2020: Increasing build number to 64
 Thu Mar 12 12:34:18 2020: Finished Loading of >image_upscaler< from >XOYZ-Code [xoyz.productions@gmail.com]< at version >0.2 Build 64<
 Thu Mar 12 12:34:18 2020: Sucessfully initialized all needed Project objects
+Tue Mar 17 02:19:34 2020: Loading project Information
+Tue Mar 17 02:19:34 2020: Increasing build number to 65
+Tue Mar 17 02:19:34 2020: Finished Loading of >image_upscaler< from >XOYZ-Code [xoyz.productions@gmail.com]< at version >0.2 Build 65<
+Tue Mar 17 02:19:34 2020: Sucessfully initialized all needed Project objects
