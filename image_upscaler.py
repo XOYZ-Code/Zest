@@ -17,7 +17,7 @@ NeuralLayers = NeuralLayerStacks(layers_number_of_neurons, layers_numer_of_input
 square_size = 16
 
 NeuralNetwork = NeuralNetwork(NeuralLayers, project)
-NeuralNetwork.train('data/img/yuki_and_kurumi.jpg', 1)
+NeuralNetwork.train(style.paint(parameter_subject='Path to image', parameter_request_input=True), 1)
 
 # print('-------------------------------------------')
 # for i in range(len(NeuralLayers.NeuralStacks)):
