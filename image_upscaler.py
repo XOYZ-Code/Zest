@@ -17,7 +17,12 @@ NeuralLayers = NeuralLayerStacks(layers_number_of_neurons, layers_numer_of_input
 square_size = 16
 
 NeuralNetwork = NeuralNetwork(NeuralLayers, project)
-NeuralNetwork.train(style.paint(parameter_subject='Path to image', parameter_request_input=True), 1)
+
+image_paths = style.paint(parameter_subject='Path to image', parameter_request_input=True).split(' ')
+
+for i in range(len(image_paths)):
+    style.paint(str(i) + ' of ' + str(len(image_paths)), 'Starting Process nr.')
+    NeuralNetwork.train(image_paths[i], 1)
 
 # print('-------------------------------------------')
 # for i in range(len(NeuralLayers.NeuralStacks)):
