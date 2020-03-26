@@ -222,23 +222,22 @@ class NeuralistNetwork:
             for i in self.NeuraFile.read_json(absolute_outputfile_path):
                 expected_output.append(self.NeuraFile.read_json(absolute_outputfile_path)[i])
 
-    def think(self):
-        return []
-
-
-class NeuralistMath:
-    time_used = 0
-
-    def __init__(self):
-        pass
+    def think(self, inputs):
+        return_outputs = [
+            self.__sigmoid(numpy.dot(inputs, self.NeuralistNetworkLayers.NeuralistInputLayer.weights))
+        ]
+        for layer in range(len(self.NeuralistNetworkLayers.NeuralistHiddenLayers)):
+            return_outputs.append(
+                self.__sigmoid(numpy.dot(return_outputs[layer + 1],
+                                         self.NeuralistNetworkLayers.NeuralistHiddenLayers[layer].weights)))
+        return_outputs.append(
+            self.__sigmoid(numpy.dot(return_outputs[len(return_outputs) - 1],
+                                     self.NeuralistNetworkLayers.NeuralistOutputLayer.weights))
+        )
+        return return_outputs
 
     def __sigmoid(self, x):
-        self.time_used += 1
         return 1 / (1 + numpy.exp(-x))
 
     def __sigmoid_derivative(self, x):
-        self.time_used += 1
         return x * (1 - x)
-
-
-XOTH = NeuralistMath()
