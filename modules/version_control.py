@@ -73,7 +73,7 @@ class Project:
         ]
         self.project_file_control.save(self.project_info_file, cache_file_content)
 
-    def log(self, parameter_to_log, print_log=False):
+    def log(self, parameter_to_log, print_log=False, save_to_log=True):
         cache_log = ''
 
         for space in range(len(time.ctime()), 20):
@@ -81,7 +81,8 @@ class Project:
 
         cache_log += ': '
         end_str = str(time.ctime()) + cache_log + parameter_to_log
-        open(self.project_log_file, 'a').write(end_str + '\n')
+        if save_to_log:
+            open(self.project_log_file, 'a').write(end_str + '\n')
         if print_log:
             print(end_str)
 
