@@ -24,12 +24,12 @@ Neuralist = NeuralistNetwork(scale_network, sys.argv,
 
 for arg in range(len(sys.argv)):
     if sys.argv[arg] == '-summary':
-        if sys.argv[arg + 1] == 'all':
+        if len(sys.argv) > arg + 1 and sys.argv[arg + 1] == 'all':
             Neuralist.NeuralistNetworkLayers.NeuralistInputLayer.summary()
             for i in Neuralist.NeuralistNetworkLayers.NeuralistHiddenLayers:
                 i.summary()
             Neuralist.NeuralistNetworkLayers.NeuralistOutputLayer.summary()
-    if sys.argv[arg] == '--get-training-data':
+    if len(sys.argv) > arg + 3 and sys.argv[arg] == '--get-training-data':
         Neuralist.get_training_data(sys.argv[arg + 1], sys.argv[arg + 2], sys.argv[arg + 3])
-    if sys.argv[arg] == '-train':
+    if len(sys.argv) > arg + 1 and sys.argv[arg] == '-train':
         Neuralist.train_network(sys.argv[arg + 1])
