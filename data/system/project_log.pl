@@ -2036,3 +2036,11 @@ Thu Oct  7 02:32:52 2021: Got 'training_set_name' from the 'training_set_path' :
 Thu Oct  7 02:32:52 2021: Training data set name: Yuki_as_bride_0.1-Build-250
 Thu Oct  7 02:32:52 2021: Available Input Files: 12854
 Thu Oct  7 02:32:52 2021: Available Output Files: 12854
+Thu Oct  7 02:35:48 2021: Loading project Information
+Thu Oct  7 02:35:48 2021: Increasing build number to 274
+Thu Oct  7 02:35:48 2021: Finished Loading of >image_upscaler< from >XOYZ-Code [xoyz.productions@gmail.com]< at version >0.1 Build 274<
+Thu Oct  7 02:35:48 2021: WARNING: Low CPU activated! No advanced details available!
+Thu Oct  7 02:35:48 2021: Got 'training_set_name' from the 'training_set_path' : Yuki_as_bride_0.1-Build-250
+Thu Oct  7 02:35:48 2021: Training data set name: Yuki_as_bride_0.1-Build-250
+Thu Oct  7 02:35:48 2021: Available Input Files: 12854
+Thu Oct  7 02:35:48 2021: Available Output Files: 12854
