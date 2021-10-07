@@ -224,8 +224,8 @@ class NeuralistNetwork:
             leave=True, unit='files',
             total=len(count_of_training_input_files) - self.reduce_iterations
         )
-
-        print(self.NeuralistNetworkLayers.NeuralistOutputLayer.weights)
+        if not self.low_cpu:
+            print(self.NeuralistNetworkLayers.NeuralistOutputLayer.weights)
 
         for train_file in range(len(count_of_training_input_files) - self.reduce_iterations):
             # loading training data into the arrays
@@ -258,7 +258,8 @@ class NeuralistNetwork:
             layer_errors = expected_output - layer_outputs[len_out - 1]
             layer_deltas = layer_errors * self.__sigmoid_derivative(layer_outputs[len_out - 1])
             layer_adjustments.append(layer_outputs[len_out - 2].T.dot(layer_deltas))
-            print(self.total2Dsum(layer_adjustments[0]))
+            if not self.low_cpu:
+                print(self.total2Dsum(layer_adjustments[0]))
             # Calculate Error, Delta and adjustments of Hidden Layers
             layer_errors = layer_deltas.dot(self.NeuralistNetworkLayers.NeuralistOutputLayer.weights.T)
             layer_deltas = layer_errors * self.__sigmoid_derivative(layer_outputs[len_out - 2])
@@ -268,12 +269,14 @@ class NeuralistNetwork:
                 layer_errors = layer_deltas.dot(self.NeuralistNetworkLayers.NeuralistHiddenLayers[i].weights.T)
                 layer_deltas = layer_errors * self.__sigmoid_derivative(layer_outputs[i])
                 layer_adjustments.append(layer_outputs[i - 1].T.dot(layer_deltas))
-                print(self.total2Dsum(layer_adjustments[len(layer_adjustments) - 1]))
+                if not self.low_cpu:
+                    print(self.total2Dsum(layer_adjustments[len(layer_adjustments) - 1]))
             # Calculate Error, Delta and adjustments of Input Layer
             layer_errors = layer_deltas.dot(self.NeuralistNetworkLayers.NeuralistHiddenLayers[0].weights.T)
             layer_deltas = layer_errors * self.__sigmoid_derivative(layer_outputs[0])
             layer_adjustments.append(training_input.T.dot(layer_deltas))
-            print(self.total2Dsum(layer_adjustments[len(layer_adjustments) - 1]))
+            if not self.low_cpu:
+                print(self.total2Dsum(layer_adjustments[len(layer_adjustments) - 1]))
             cachek = len(layer_adjustments)
             for k in range(len(layer_adjustments)):
                 cachek -= 1

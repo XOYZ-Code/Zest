@@ -1956,3 +1956,59 @@ Thu Oct  7 02:21:17 2021: Got 'training_set_name' from the 'training_set_path' :
 Thu Oct  7 02:21:17 2021: Training data set name: Yuki_as_bride_0.1-Build-250
 Thu Oct  7 02:21:17 2021: Available Input Files: 12854
 Thu Oct  7 02:21:17 2021: Available Output Files: 12854
+Thu Oct  7 02:24:03 2021: Loading project Information
+Thu Oct  7 02:24:03 2021: Increasing build number to 264
+Thu Oct  7 02:24:03 2021: Finished Loading of >image_upscaler< from >XOYZ-Code [xoyz.productions@gmail.com]< at version >0.1 Build 264<
+Thu Oct  7 02:24:03 2021: WARNING: Low CPU activated! No advanced details available!
+Thu Oct  7 02:24:04 2021: Got 'training_set_name' from the 'training_set_path' : Yuki_as_bride_0.1-Build-250
+Thu Oct  7 02:24:04 2021: Training data set name: Yuki_as_bride_0.1-Build-250
+Thu Oct  7 02:24:04 2021: Available Input Files: 12854
+Thu Oct  7 02:24:04 2021: Available Output Files: 12854
+Thu Oct  7 02:24:31 2021: Loading project Information
+Thu Oct  7 02:24:31 2021: Increasing build number to 265
+Thu Oct  7 02:24:31 2021: Finished Loading of >image_upscaler< from >XOYZ-Code [xoyz.productions@gmail.com]< at version >0.1 Build 265<
+Thu Oct  7 02:24:31 2021: WARNING: Low CPU activated! No advanced details available!
+Thu Oct  7 02:24:32 2021: Got 'training_set_name' from the 'training_set_path' : Yuki_as_bride_0.1-Build-250
+Thu Oct  7 02:24:32 2021: Training data set name: Yuki_as_bride_0.1-Build-250
+Thu Oct  7 02:24:32 2021: Available Input Files: 12854
+Thu Oct  7 02:24:32 2021: Available Output Files: 12854
+Thu Oct  7 02:24:59 2021: Loading project Information
+Thu Oct  7 02:24:59 2021: Increasing build number to 266
+Thu Oct  7 02:24:59 2021: Finished Loading of >image_upscaler< from >XOYZ-Code [xoyz.productions@gmail.com]< at version >0.1 Build 266<
+Thu Oct  7 02:24:59 2021: WARNING: Low CPU activated! No advanced details available!
+Thu Oct  7 02:24:59 2021: Got 'training_set_name' from the 'training_set_path' : Yuki_as_bride_0.1-Build-250
+Thu Oct  7 02:24:59 2021: Training data set name: Yuki_as_bride_0.1-Build-250
+Thu Oct  7 02:24:59 2021: Available Input Files: 12854
+Thu Oct  7 02:24:59 2021: Available Output Files: 12854
+Thu Oct  7 02:25:35 2021: Loading project Information
+Thu Oct  7 02:25:35 2021: Increasing build number to 267
+Thu Oct  7 02:25:35 2021: Finished Loading of >image_upscaler< from >XOYZ-Code [xoyz.productions@gmail.com]< at version >0.1 Build 267<
+Thu Oct  7 02:25:35 2021: WARNING: Low CPU activated! No advanced details available!
+Thu Oct  7 02:25:36 2021: Got 'training_set_name' from the 'training_set_path' : Yuki_as_bride_0.1-Build-250
+Thu Oct  7 02:25:36 2021: Training data set name: Yuki_as_bride_0.1-Build-250
+Thu Oct  7 02:25:36 2021: Available Input Files: 12854
+Thu Oct  7 02:25:36 2021: Available Output Files: 12854
+Thu Oct  7 02:26:18 2021: Loading project Information
+Thu Oct  7 02:26:18 2021: Increasing build number to 268
+Thu Oct  7 02:26:18 2021: Finished Loading of >image_upscaler< from >XOYZ-Code [xoyz.productions@gmail.com]< at version >0.1 Build 268<
+Thu Oct  7 02:26:18 2021: WARNING: Low CPU activated! No advanced details available!
+Thu Oct  7 02:26:18 2021: Got 'training_set_name' from the 'training_set_path' : Yuki_as_bride_0.1-Build-250
+Thu Oct  7 02:26:18 2021: Training data set name: Yuki_as_bride_0.1-Build-250
+Thu Oct  7 02:26:18 2021: Available Input Files: 12854
+Thu Oct  7 02:26:18 2021: Available Output Files: 12854
+Thu Oct  7 02:27:01 2021: Loading project Information
+Thu Oct  7 02:27:01 2021: Increasing build number to 269
+Thu Oct  7 02:27:01 2021: Finished Loading of >image_upscaler< from >XOYZ-Code [xoyz.productions@gmail.com]< at version >0.1 Build 269<
+Thu Oct  7 02:27:01 2021: WARNING: Low CPU activated! No advanced details available!
+Thu Oct  7 02:27:01 2021: Got 'training_set_name' from the 'training_set_path' : Yuki_as_bride_0.1-Build-250
+Thu Oct  7 02:27:01 2021: Training data set name: Yuki_as_bride_0.1-Build-250
+Thu Oct  7 02:27:01 2021: Available Input Files: 12854
+Thu Oct  7 02:27:01 2021: Available Output Files: 12854
+Thu Oct  7 02:27:44 2021: Loading project Information
+Thu Oct  7 02:27:44 2021: Increasing build number to 270
+Thu Oct  7 02:27:44 2021: Finished Loading of >image_upscaler< from >XOYZ-Code [xoyz.productions@gmail.com]< at version >0.1 Build 270<
+Thu Oct  7 02:27:44 2021: WARNING: Low CPU activated! No advanced details available!
+Thu Oct  7 02:27:44 2021: Got 'training_set_name' from the 'training_set_path' : Yuki_as_bride_0.1-Build-250
+Thu Oct  7 02:27:44 2021: Training data set name: Yuki_as_bride_0.1-Build-250
+Thu Oct  7 02:27:44 2021: Available Input Files: 12854
+Thu Oct  7 02:27:44 2021: Available Output Files: 12854
