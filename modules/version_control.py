@@ -72,6 +72,10 @@ class Project:
             'Project Version str.....: ' + self.project_version_str
         ]
         self.project_file_control.save(self.project_info_file, cache_file_content)
+        
+        README = open('README.md').readlines()
+        README[0] = '#image_upscaler ' + self.project_version_str + '\n'
+        open('README.md', 'w').writelines(README)
 
     def log(self, parameter_to_log, print_log=False, save_to_log=True):
         cache_log = ''
