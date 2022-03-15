@@ -25,8 +25,8 @@ class Project:
 
     def initialize_project_build(self):
         #   set project info file path
-        self.project_info_file = 'data/system/project_info.pl'
-        self.project_log_file = 'data/system/project_log.pl'
+        self.project_info_file = 'data/system/project_info.info'
+        self.project_log_file = 'data/system/project_log.info'
         #   loading project information
         try:
             self.log('Loading project Information')
