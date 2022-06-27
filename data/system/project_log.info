@@ -2162,3 +2162,50 @@ Tue Feb  8 10:30:07 2022: Got 'training_set_name' from the 'training_set_path' :
 Tue Feb  8 10:30:07 2022: Training data set name: JibrilChibi_0.1-Build-283
 Tue Feb  8 10:30:07 2022: Available Input Files: 11025
 Tue Feb  8 10:30:07 2022: Available Output Files: 11025
+Mon Jun 27 23:14:00 2022: Loading project Information
+Mon Jun 27 23:14:00 2022: Increasing build number to 298
+Mon Jun 27 23:14:00 2022: Finished Loading of >image_upscaler< from >XOYZ-Code [xoyz.productions@gmail.com]< at version >0.1 Build 298<
+Mon Jun 27 23:16:30 2022: Loading project Information
+Mon Jun 27 23:16:30 2022: Increasing build number to 299
+Mon Jun 27 23:16:30 2022: Finished Loading of >image_upscaler< from >XOYZ-Code [xoyz.productions@gmail.com]< at version >0.1 Build 299<
+Mon Jun 27 23:16:39 2022: Got 'training_set_name' from the 'training_set_path' : 
+Mon Jun 27 23:16:39 2022: Training data set name: 
+Mon Jun 27 23:17:10 2022: Loading project Information
+Mon Jun 27 23:17:10 2022: Increasing build number to 300
+Mon Jun 27 23:17:10 2022: Finished Loading of >image_upscaler< from >XOYZ-Code [xoyz.productions@gmail.com]< at version >0.1 Build 300<
+Mon Jun 27 23:17:10 2022: WARNING: Low CPU activated! No advanced details available!
+Mon Jun 27 23:17:10 2022: Got 'training_set_name' from the 'training_set_path' : Dakimakura-Zest_0.1-Build-298
+Mon Jun 27 23:17:10 2022: Training data set name: Dakimakura-Zest_0.1-Build-298
+Mon Jun 27 23:17:10 2022: Available Input Files: 674
+Mon Jun 27 23:17:10 2022: Available Output Files: 674
+Mon Jun 27 23:17:25 2022: Loading project Information
+Mon Jun 27 23:17:25 2022: Increasing build number to 301
+Mon Jun 27 23:17:25 2022: Finished Loading of >image_upscaler< from >XOYZ-Code [xoyz.productions@gmail.com]< at version >0.1 Build 301<
+Mon Jun 27 23:17:35 2022: Got 'training_set_name' from the 'training_set_path' : Dakimakura-Zest_0.1-Build-298
+Mon Jun 27 23:17:35 2022: Training data set name: Dakimakura-Zest_0.1-Build-298
+Mon Jun 27 23:17:35 2022: Available Input Files: 674
+Mon Jun 27 23:17:35 2022: Available Output Files: 674
+Mon Jun 27 23:21:14 2022: Loading project Information
+Mon Jun 27 23:21:14 2022: Increasing build number to 302
+Mon Jun 27 23:21:14 2022: Finished Loading of >image_upscaler< from >XOYZ-Code [xoyz.productions@gmail.com]< at version >0.1 Build 302<
+Mon Jun 27 23:21:14 2022: WARNING: Low CPU activated! No advanced details available!
+Mon Jun 27 23:21:14 2022: Got 'training_set_name' from the 'training_set_path' : Dakimakura-Zest_0.1-Build-298
+Mon Jun 27 23:21:14 2022: Training data set name: Dakimakura-Zest_0.1-Build-298
+Mon Jun 27 23:21:14 2022: Available Input Files: 674
+Mon Jun 27 23:21:14 2022: Available Output Files: 674
+Mon Jun 27 23:24:56 2022: Loading project Information
+Mon Jun 27 23:24:56 2022: Increasing build number to 303
+Mon Jun 27 23:24:56 2022: Finished Loading of >image_upscaler< from >XOYZ-Code [xoyz.productions@gmail.com]< at version >0.1 Build 303<
+Mon Jun 27 23:24:56 2022: WARNING: Low CPU activated! No advanced details available!
+Mon Jun 27 23:24:57 2022: Got 'training_set_name' from the 'training_set_path' : Dakimakura-Zest_0.1-Build-298
+Mon Jun 27 23:24:57 2022: Training data set name: Dakimakura-Zest_0.1-Build-298
+Mon Jun 27 23:24:57 2022: Available Input Files: 674
+Mon Jun 27 23:24:57 2022: Available Output Files: 674
+Mon Jun 27 23:27:45 2022: Loading project Information
+Mon Jun 27 23:27:45 2022: Increasing build number to 304
+Mon Jun 27 23:27:45 2022: Finished Loading of >image_upscaler< from >XOYZ-Code [xoyz.productions@gmail.com]< at version >0.1 Build 304<
+Mon Jun 27 23:27:45 2022: WARNING: Low CPU activated! No advanced details available!
+Mon Jun 27 23:27:45 2022: Got 'training_set_name' from the 'training_set_path' : Dakimakura-Zest_0.1-Build-298
+Mon Jun 27 23:27:45 2022: Training data set name: Dakimakura-Zest_0.1-Build-298
+Mon Jun 27 23:27:45 2022: Available Input Files: 674
+Mon Jun 27 23:27:45 2022: Available Output Files: 674

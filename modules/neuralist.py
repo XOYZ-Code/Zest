@@ -120,6 +120,7 @@ class NeuralistNetwork:
     NeruaStyle = Style()
     square_size = 16
     reduce_iterations = 0
+    learning_rate = 0.05
 
     def __init__(self, network_scaling, arguments=None, project_obj=None):
         self.NeuralistProject = project_obj
@@ -281,12 +282,12 @@ class NeuralistNetwork:
             for k in range(len(layer_adjustments)):
                 cachek -= 1
                 if k == len(layer_adjustments) - 1:
-                    self.NeuralistNetworkLayers.NeuralistInputLayer.weights += layer_adjustments[k]
+                    self.NeuralistNetworkLayers.NeuralistInputLayer.weights += layer_adjustments[k] * self.learning_rate
                 else:
                     if k == 0:
-                        self.NeuralistNetworkLayers.NeuralistOutputLayer.weights += layer_adjustments[k]
+                        self.NeuralistNetworkLayers.NeuralistOutputLayer.weights += layer_adjustments[k] * self.learning_rate
                     else:
-                        self.NeuralistNetworkLayers.NeuralistHiddenLayers[cachek - 1].weights += layer_adjustments[k]
+                        self.NeuralistNetworkLayers.NeuralistHiddenLayers[cachek - 1].weights += layer_adjustments[k] * self.learning_rate
 
             # update tqdm process
             training_process.set_description('Loss: ' + str(round(self.total2Dsum(layer_errors[0])['approx'], 4)))
