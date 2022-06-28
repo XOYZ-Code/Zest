@@ -1,5 +1,3 @@
-# image_upscaler 0.1 Build 297
+# Zest
 
-A small project for upscaling images with a self coded neural network libary which should be expandable to any scale until your pc can't handle it anymore.
-
-DANGER - WORK IN PROGRESS - USE IT AT OWN RISK - CURRENTLY NO USABLE OUTPUT
+### A dynamic approach to neural networks without popular libaries like pandas, keras or tenserflow.
