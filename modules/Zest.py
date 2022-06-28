@@ -36,4 +36,20 @@ class Zest:
 
         self.weights[-1] = np.random.rand(hidden_layer_size, output_length)
 
-        pass
+        # Create the layers
+        self.layers = [None for _ in range(hidden_layer_count + 2)]
+    
+    def feed_forward(self, inputs:np.ndarray):
+        '''
+        Calculate the results with a giving input depending int the current weights of the network.
+        '''
+
+        self.layers[0] = sigmoid(np.dot(inputs, self.weights[0]))
+
+        for layer_index in range(1, len(self.layers)):
+            self.layers[layer_index] = np.dot(self.layers[layer_index - 1], self.weights[layer_index])
+    
+    def back_operation(self):
+        '''
+        Calculate the errors and make adjustments
+        '''
