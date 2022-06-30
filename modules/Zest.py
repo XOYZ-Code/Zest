@@ -3,12 +3,13 @@ import numpy as np
 class Zest:
     
     def __init__(self, x, y) -> None:
+        self.extra_layers = 2
         self.input      = x
         self.weights    = [
             np.random.rand(self.input.shape[1], len(y)),
             np.random.rand(len(y), y.shape[1])
         ]
-        for _ in range(2):
+        for _ in range(self.extra_layers):
             self.weights.append(np.random.rand(y.shape[1], y.shape[1]))
         self.weights.append(np.random.rand(y.shape[1], len(y[0])))
         
@@ -51,13 +52,16 @@ class Zest:
         '''
         d_weights = [0.0 for _ in range(len(self.weights))]
 
-        d_weights[4] = np.dot(self.layers[3].T, (2 * (self.y - self.output) * self.sigmoid_derivative(self.output)))
+        d_weights[-1] = np.dot(self.layers[-1].T, (2 * (self.y - self.output) * self.sigmoid_derivative(self.output)))
 
-        d_weights[3] = np.dot(self.layers[2].T, (np.dot(2 * (self.y - self.output) * self.sigmoid_derivative(self.output), self.weights[4].T) * self.sigmoid_derivative(self.layers[3])))
+        d_weights[-2] = np.dot(self.layers[-2].T, (np.dot(2 * (self.y - self.output) * self.sigmoid_derivative(self.output), self.weights[-1].T) * self.sigmoid_derivative(self.layers[-1])))
 
-        d_weights[2] = np.dot(self.layers[1].T, (np.dot(2 * (self.y - self.output) * self.sigmoid_derivative(self.output), self.weights[3].T) * self.sigmoid_derivative(self.layers[2])))
+        # d_weights[2] = np.dot(self.layers[1].T, (np.dot(2 * (self.y - self.output) * self.sigmoid_derivative(self.output), self.weights[3].T) * self.sigmoid_derivative(self.layers[2])))
 
-        d_weights[1] = np.dot(self.layers[0].T, (np.dot(2 * (self.y - self.output) * self.sigmoid_derivative(self.output), self.weights[2].T) * self.sigmoid_derivative(self.layers[1])))
+        # d_weights[1] = np.dot(self.layers[0].T, (np.dot(2 * (self.y - self.output) * self.sigmoid_derivative(self.output), self.weights[2].T) * self.sigmoid_derivative(self.layers[1])))
+
+        for extra in range(self.extra_layers):
+            d_weights[- (2 + (extra + 1))] = np.dot(self.layers[- (2 + (extra + 1))].T, (np.dot(2 * (self.y - self.output) * self.sigmoid_derivative(self.output), self.weights[- (2 + extra)].T) * self.sigmoid_derivative(self.layers[- (2 + extra)])))
 
         d_weights[0] = np.dot(self.input.T, (np.dot(2 * (self.y - self.output) * self.sigmoid_derivative(self.output), self.weights[1].T) * self.sigmoid_derivative(self.layers[0])))
 
