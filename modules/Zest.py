@@ -1,55 +1,63 @@
 import numpy as np
-from modules.math.neural_math import sigmoid, sigmoid_derivative
 
 class Zest:
-
-    def __init__(
-        self,
-        input_length        :int,
-        output_length       :int,
-        hidden_layer_count  :int    = 1,
-        hidden_layer_size   :int    = None
-        ) -> None:
-        '''
-        ``input_length``: Defines how many inputs the network wants. [0, 1, 1] = Length 3
-        ``output_length``: Defines how many outputs the network produces. [0, 1, 1] = Length 3
-        ``hidden_layer_count``: Defines how many hidden layers will be created. Minimum 1
-        ``hidden_layer_size``: Defines how many Neurons should be in each Hidden Layer
-        '''
-
-        # Hidden-Layer count can't be lower than 1
-        if hidden_layer_count < 1:
-            hidden_layer_count = 1
-
-        # Set hidden_layer_size to output_length if it is None
-        if hidden_layer_size is None:
-            hidden_layer_size = output_length
-
-        # Create the weight Array. The '+ 2' makes place for the input and output layer weights
-        self.weights = [None for _ in range(hidden_layer_count + 2)]
-
-        # Create random arrays for the weights
-        self.weights[0]  = np.random.rand(input_length, hidden_layer_size)
-
-        for weight_index in range(1, len(self.weights) - 1):
-            self.weights[weight_index] = np.random.rand(hidden_layer_size, hidden_layer_size)
-
-        self.weights[-1] = np.random.rand(hidden_layer_size, output_length)
-
-        # Create the layers
-        self.layers = [None for _ in range(hidden_layer_count + 2)]
     
-    def feed_forward(self, inputs:np.ndarray):
-        '''
-        Calculate the results with a giving input depending int the current weights of the network.
-        '''
-
-        self.layers[0] = sigmoid(np.dot(inputs, self.weights[0]))
-
-        for layer_index in range(1, len(self.layers)):
-            self.layers[layer_index] = np.dot(self.layers[layer_index - 1], self.weights[layer_index])
+    def __init__(self, x, y) -> None:
+        self.input      = x
+        self.weights    = [
+            np.random.rand(self.input.shape[1], len(y)),
+            np.random.rand(len(y), y.shape[1]),
+            np.random.rand(y.shape[1], y.shape[1]),
+            np.random.rand(y.shape[1], y.shape[1]),
+            np.random.rand(y.shape[1], len(y[0]))
+        ]
+        self.y          = y
+        self.output     = np.zeros(self.y.shape)
     
-    def back_operation(self):
+    # Some Helper Functions
+    def sigmoid(self, x):
         '''
-        Calculate the errors and make adjustments
+        The basic sigmoid function
         '''
+        return 1 / ( 1 + np.exp(-x) )
+    
+    def sigmoid_derivative(self, y):
+        '''
+        The derivative of sigmoid
+        '''
+        return y * ( 1.0 - y )
+    
+    # The real fun starts here
+
+    def feed_forward(self, x_in = None):
+        '''
+        The basic training function of the nerual network.
+        '''
+        if x_in is None:
+            x_in = self.input
+
+        self.layer1 = self.sigmoid(np.dot(x_in, self.weights[0]))
+        self.layer2 = self.sigmoid(np.dot(self.layer1, self.weights[1]))
+        self.layer3 = self.sigmoid(np.dot(self.layer2, self.weights[2]))
+        self.layer4 = self.sigmoid(np.dot(self.layer3, self.weights[3]))
+        self.output = self.sigmoid(np.dot(self.layer4, self.weights[4]))
+    
+    def backprop(self):
+        '''
+        Backoperation to find loss
+        '''
+        d_weights = [0.0 for _ in range(len(self.weights))]
+
+        d_weights[4] = np.dot(self.layer4.T, (2 * (self.y - self.output) * self.sigmoid_derivative(self.output)))
+
+        d_weights[3] = np.dot(self.layer3.T, (np.dot(2 * (self.y - self.output) * self.sigmoid_derivative(self.output), self.weights[4].T) * self.sigmoid_derivative(self.layer4)))
+
+        d_weights[2] = np.dot(self.layer2.T, (np.dot(2 * (self.y - self.output) * self.sigmoid_derivative(self.output), self.weights[3].T) * self.sigmoid_derivative(self.layer3)))
+
+        d_weights[1] = np.dot(self.layer1.T, (np.dot(2 * (self.y - self.output) * self.sigmoid_derivative(self.output), self.weights[2].T) * self.sigmoid_derivative(self.layer2)))
+
+        d_weights[0] = np.dot(self.input.T, (np.dot(2 * (self.y - self.output) * self.sigmoid_derivative(self.output), self.weights[1].T) * self.sigmoid_derivative(self.layer1)))
+
+        # Now update the weights
+        for i in range(len(self.weights)):
+            self.weights[i] += d_weights[i]
