@@ -3,7 +3,7 @@ import numpy as np
 class Zest:
     
     def __init__(self, x, y) -> None:
-        self.extra_layers = 2
+        self.extra_layers = 1000
         self.input      = x
         self.weights    = [
             np.random.rand(self.input.shape[1], len(y)),
@@ -42,9 +42,13 @@ class Zest:
 
         self.layers.append(self.sigmoid(np.dot(x_in, self.weights[0])))
         self.layers.append(self.sigmoid(np.dot(self.layers[0], self.weights[1])))
-        self.layers.append(self.sigmoid(np.dot(self.layers[1], self.weights[2])))
-        self.layers.append(self.sigmoid(np.dot(self.layers[2], self.weights[3])))
-        self.output = self.sigmoid(np.dot(self.layers[3], self.weights[4]))
+
+        for layer in range(self.extra_layers):
+            self.layers.append(self.sigmoid(np.dot(self.layers[1 + layer], self.weights[2 + layer])))
+
+        # self.layers.append(self.sigmoid(np.dot(self.layers[1], self.weights[2])))
+        # self.layers.append(self.sigmoid(np.dot(self.layers[2], self.weights[3])))
+        self.output = self.sigmoid(np.dot(self.layers[-1], self.weights[-1]))
     
     def backprop(self):
         '''
