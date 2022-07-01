@@ -1,9 +1,10 @@
 import numpy as np
 
-class Zest:
+class Zest_Network:
     
     def __init__(self, x, y) -> None:
-        self.extra_layers = 1000
+        self.learning_rate = 0.0005
+        self.extra_layers = 5
         self.input      = x
         self.weights    = [
             np.random.rand(self.input.shape[1], len(y)),
@@ -21,7 +22,10 @@ class Zest:
         '''
         The basic sigmoid function
         '''
-        return 1 / ( 1 + np.exp(-x) )
+        sig = 1 / ( 1 + np.exp(-x / 500) )
+        sig = np.minimum(sig, 0.99999)
+        sig = np.maximum(sig, 0.00001)
+        return sig
     
     def sigmoid_derivative(self, y):
         '''
@@ -71,4 +75,4 @@ class Zest:
 
         # Now update the weights
         for i in range(len(self.weights)):
-            self.weights[i] += d_weights[i]
+            self.weights[i] += d_weights[i] * self.learning_rate
